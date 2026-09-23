@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/popup/popup.css">
+  <title>Reaction Rush</title>
+</head>
+
+<body>
+  <main class="app">
+    <header>
+      <h1 data-i18n="gameTitle"></h1><button id="settingsButton" class="icon" data-i18n-aria="settings"
+        aria-label="">⚙</button>
+    </header>
+    <section id="hud" aria-live="polite">
+      <div>
+        <span data-i18n="score"></span>
+        <b id="score">0</b>
+      </div>
+      <div>
+        <span data-i18n="combo" data-i18n-title="comboHint"></span>
+        <b id="combo">×0</b>
+      </div>
+      <div>
+        <span data-i18n="reactionTime"></span>
+        <b id="reaction">—</b>
+      </div>
+    </section>
+    <section id="gameArea" tabindex="0" role="application" data-i18n-aria="gameArea">
+      <button id="target" hidden="" data-i18n-aria="target" aria-label=""><span>⚡</span></button>
+      <div id="message" aria-live="assertive"></div>
+      <div id="countdown">
+        30
+      </div>
+    </section>
+    <section id="controls">
+      <button id="startButton" class="primary" data-i18n="start"></button><button id="pauseButton" hidden=""
+        data-i18n="pause"></button><button id="restartButton" hidden="" data-i18n="restart"></button>
+    </section>
+    <section id="results" hidden="" aria-live="polite">
+      <h2 data-i18n="gameOver"></h2>
+      <div class="result-group">
+        <h3 id="roundResultsTitle"></h3>
+        <p><span data-i18n="score"></span><span class="result-separator" aria-hidden="true">:</span><b
+            id="roundScore">0</b></p>
+        <p><span data-i18n="bestReaction"></span><span class="result-separator" aria-hidden="true">:</span><b
+            id="roundBestReaction">—</b></p>
+        <p><span data-i18n="averageReaction"></span><span class="result-separator" aria-hidden="true">:</span><b
+            id="roundAverage">—</b></p>
+      </div>
+      <div class="result-group">
+        <h3 id="personalBestTitle"></h3>
+        <p><span data-i18n="highScore"></span><span class="result-separator" aria-hidden="true">:</span><b
+            id="bestScore">0</b></p>
+        <p><span data-i18n="bestReaction"></span><span class="result-separator" aria-hidden="true">:</span><b
+            id="bestReaction">—</b></p>
+        <p><span id="overallAverageLabel"></span><span class="result-separator" aria-hidden="true">:</span><b
+            id="average">—</b></p>
+      </div>
+    </section>
+    <section id="settings" hidden="">
+      <label><span data-i18n="language"></span><select id="languageSelect">
+        </select></label><label class="switch"><input id="soundToggle" type="checkbox"><span
+          data-i18n="sound"></span></label><button id="resetButton" class="danger" data-i18n="resetStatistics"></button>
+    </section>
+    <p class="hint" data-i18n="keyboardHint"></p>
+    <footer class="extension-meta">
+      <a href="https://ashokri.com/donate/" target="_blank" rel="noopener noreferrer" data-i18n="donate"></a><span
+        aria-hidden="true">-</span><span id="version"></span>
+    </footer>
+  </main>
+  <script type="module" src="js/popup/popup.js"></script>
+</body>
+
+</html>
