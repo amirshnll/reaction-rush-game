@@ -12,6 +12,10 @@ Reaction Rush is a fast, accessible, multilingual reaction-time mini-game for th
 
 The extension provides a simple way to practice reaction speed and focus through short, repeatable sessions launched from the browser toolbar.
 
+## Download
+
+[Chrome](#) - [Firefox](https://addons.mozilla.org/firefox/addon/reaction-rush/)
+
 ## License
 
 Reaction Rush is licensed under the MIT License. See the `LICENSE` file for the full license text.
